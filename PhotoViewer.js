@@ -5,16 +5,16 @@
 // **DO THIS**:
 //   Replace BUCKET_NAME with the bucket name.
 //
-var albumBucketName = 'BUCKET_NAME';
+var albumBucketName = 'arn:aws:s3:::imagerepositoory';
 
 // **DO THIS**:
 //   Replace this block of code with the sample code located at:
 //   Cognito -- Manage Identity Pools -- [identity_pool_name] -- Sample Code -- JavaScript
 //
 // Initialize the Amazon Cognito credentials provider
-AWS.config.region = 'REGION'; // Region
+AWS.config.region = 'us-east-1'; // Region
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'IDENTITY_POOL_ID',
+    IdentityPoolId: 'us-east-1:ca1b7ef2-8146-4045-963e-82351a2dfba3',
 });
 
 // Create a new service object
